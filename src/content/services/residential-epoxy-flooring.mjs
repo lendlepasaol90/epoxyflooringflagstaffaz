@@ -100,7 +100,7 @@ We also think about transitions. Where a coated mudroom meets hardwood in the ha
       kind: 'prose',
       heading: 'Why careful installation matters indoors',
       toc: 'Why professional',
-      body: `Inside a home, every flaw is visible. Ridges from old tile thinset, dust caught in the topcoat, uneven sheen and rough edges at baseboards all show in daylight. Interior work also means protecting finished surfaces, controlling dust in an occupied house and managing odor.
+      body: `Living spaces leave nowhere to hide. Low winter sun through a Flagstaff window picks out leftover thinset ridges, specks of dust in the clear coat, patchy sheen and ragged baseboard edges. Interior work also means protecting finished surfaces, controlling dust in an occupied house and managing odor.
 
 Our crews take the extra time interior floors need: more thorough grinding, careful edge work, clean air management and a final inspection in good light before we hand over the room.`,
     },

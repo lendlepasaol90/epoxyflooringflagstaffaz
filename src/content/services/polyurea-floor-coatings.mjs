@@ -108,7 +108,7 @@ Where it pays off is the third or fourth winter. Rigid floors in cold shops tend
   ],
   faqHeading: 'Polyurea questions',
   faqs: [
-    { q: 'Is polyurea the same as polyaspartic?', a: 'They are related. Polyaspartic is a type of polyurea engineered for longer working time and UV stability, so it is usually the topcoat. When we say polyurea, we usually mean the flexible base coat.' },
+    { q: 'Is polyurea the same as polyaspartic?', a: 'Close cousins. Polyaspartic belongs to the polyurea family but was tuned to give installers more time and to stay clear in sunlight, which is why it usually finishes the floor. When we say polyurea, we usually mean the flexible base coat.' },
     { q: 'Will cracks come back through the coating?', a: 'Normal hairline cracks and joint movement are absorbed far better by a flexible base. Cracks caused by active heaving or settling can still telegraph through any coating; we will point those out.' },
     { q: 'Can polyurea go in a barn or pole building?', a: 'Yes, on a concrete slab. It is a good choice for rural outbuildings because of its flexibility and impact resistance.' },
     { q: 'How cold can it be during installation?', a: 'Polyurea tolerates cooler temperatures than many epoxies, but every product has a minimum. We check slab and air temperature and use temporary heat if needed.' },

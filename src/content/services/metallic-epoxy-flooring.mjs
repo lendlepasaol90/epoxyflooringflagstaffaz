@@ -64,7 +64,7 @@ Because the final pattern forms as the resin levels, a metallic floor can be gui
 
 **Primer and tinted base.** These seal the concrete and set the background tone the metallics will play against.
 
-**The pour.** The metallic layer is mixed, poured and worked across the whole floor in one continuous session, so there are no visible seams.
+**Pattern day.** Pigmented resin goes down wall to wall without a break, which is what keeps batch lines out of the finished floor.
 
 **Topcoat.** A clear protective layer in gloss or satin adds scratch resistance and, where sunlight reaches, UV stability.`,
     },
@@ -93,7 +93,7 @@ Finally, think about grit. Even in a living space, cinders and sand get tracked 
       toc: 'Why professional',
       body: `Metallic epoxy is one of the least forgiving coatings to install. Working time is limited, the entire floor has to be handled in one session, and mistakes such as roller marks, uneven mixing or dust in the surface are permanent. The pattern relies on technique that only comes with practice.
 
-Hiring a crew with metallic experience is the difference between a floor that looks like polished stone and one that looks like a spill. Ask any installer to show you sample boards and finished floors before you commit.`,
+A practiced metallic crew gets you something that reads as polished stone; an inexperienced one gets you something that reads as a spill. Before signing with anyone, ask to see their boards and photos of rooms they have actually finished.`,
     },
     {
       kind: 'prose',

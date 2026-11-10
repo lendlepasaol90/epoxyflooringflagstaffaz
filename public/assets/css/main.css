@@ -528,3 +528,6 @@ body.is-locked { overflow: hidden; }
   .bleed__bg { inset: 0; transform: none !important; }
 }
 @media print { .hdr, .fab, .drawer, .ftr__map, .lead { display: none !important; } }
+
+/* Let comparison tables scroll inside their box instead of widening the page */
+main *:has(table) { min-width: 0; }

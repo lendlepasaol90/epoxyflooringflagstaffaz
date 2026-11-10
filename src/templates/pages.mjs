@@ -95,7 +95,7 @@ We use these details only to respond to you, arrange an estimate and communicate
 
 ## Services that help run the site
 
-Form submissions may pass through an email or workflow service so they reach us. The footer map is provided by Google Maps and photographs load from Unsplash's image servers. Those providers may receive standard technical information such as your IP address, under their own policies.
+Form submissions may pass through an email or workflow service so they reach us. The footer map is provided by Google Maps. Those providers may receive standard technical information such as your IP address, under their own policies.
 
 ## Your choices
 
