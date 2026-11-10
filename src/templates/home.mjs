@@ -1,5 +1,5 @@
 import { site } from '../site.mjs';
-import { esc, md, img } from '../lib/html.mjs';
+import { esc, md, img, beginDedupe, endDedupe } from '../lib/html.mjs';
 import { layout } from './layout.mjs';
 import { leadForm, phoneLink } from './parts.mjs';
 import { bySlug } from '../content/services/index.mjs';
@@ -50,6 +50,7 @@ const faqs = [
 ];
 
 export function renderHome() {
+  beginDedupe(['brewery', 'greyMarble', 'hallReflect', 'lodgeInterior', 'peaks', 'sportsGarage', 'warehouse']);
   const tile = (slug, cls = '', photo) => {
     const s = bySlug[slug];
     return `<a class="tile ${cls}${photo ? ' tile--photo' : ''} rv" href="/${slug}/">${photo ? `<span class="tile__bg">${img(s.image, { sizes: '(max-width: 640px) 92vw, 600px', widths: [500, 900], alt: '' })}</span>` : ''}
@@ -61,7 +62,7 @@ export function renderHome() {
 <section class="hero" aria-labelledby="hero-h">
   <div class="wrap">
     <div class="hero__panel">
-      <div class="hero__img" aria-hidden="true">${img('peaks', { eager: true, widths: [800, 1400, 2000, 2600], alt: '' })}</div>
+      <div class="hero__img" aria-hidden="true">${img('peaks', { keep: true, eager: true, widths: [800, 1400, 2000, 2600], alt: '' })}</div>
       <div class="hero__topo" aria-hidden="true">${topo}</div>
       <p class="hero__elev">${pin} Elevation near 7,000 ft</p>
       <div class="hero__card rv in">
@@ -303,12 +304,12 @@ export function renderHome() {
     <div class="strip-nav"><button type="button" data-strip-prev aria-label="Scroll gallery left">←</button><button type="button" data-strip-next aria-label="Scroll gallery right">→</button></div>
   </div>
   <div class="strip" data-strip tabindex="0" aria-label="Finish gallery">
-    <figure><div>${img('sportsGarage', { widths: [400, 700], sizes: '400px', ratio: 0.8 })}</div><figcaption><b>Smooth garage finish</b>Solid color with a clear, hard-wearing topcoat</figcaption></figure>
-    <figure><div>${img('greyMarble', { widths: [400, 700], sizes: '400px', ratio: 4 / 4.2 })}</div><figcaption><b>Stone-look metallic</b>Grey and silver movement for interiors</figcaption></figure>
-    <figure><div>${img('lodgeInterior', { widths: [400, 700], sizes: '400px', ratio: 0.8 })}</div><figcaption><b>Satin interior floor</b>Calm, seamless and easy to clean</figcaption></figure>
-    <figure><div>${img('brewery', { widths: [400, 700], sizes: '400px', ratio: 4 / 4.2 })}</div><figcaption><b>Production and washdown</b>Textured resin for wet commercial floors</figcaption></figure>
-    <figure><div>${img('hallReflect', { widths: [400, 700], sizes: '400px', ratio: 0.8 })}</div><figcaption><b>High-gloss showroom</b>Bright, reflective finish for retail</figcaption></figure>
-    <figure><div>${img('warehouse', { widths: [400, 700], sizes: '400px', ratio: 4 / 4.2 })}</div><figcaption><b>Light-reflective industrial</b>Brighter aisles with high-build coatings</figcaption></figure>
+    <figure><div>${img('sportsGarage', { keep: true, widths: [400, 700], sizes: '400px', ratio: 0.8 })}</div><figcaption><b>Smooth garage finish</b>Solid color with a clear, hard-wearing topcoat</figcaption></figure>
+    <figure><div>${img('greyMarble', { keep: true, widths: [400, 700], sizes: '400px', ratio: 4 / 4.2 })}</div><figcaption><b>Stone-look metallic</b>Grey and silver movement for interiors</figcaption></figure>
+    <figure><div>${img('lodgeInterior', { keep: true, widths: [400, 700], sizes: '400px', ratio: 0.8 })}</div><figcaption><b>Satin interior floor</b>Calm, seamless and easy to clean</figcaption></figure>
+    <figure><div>${img('brewery', { keep: true, widths: [400, 700], sizes: '400px', ratio: 4 / 4.2 })}</div><figcaption><b>Production and washdown</b>Textured resin for wet commercial floors</figcaption></figure>
+    <figure><div>${img('hallReflect', { keep: true, widths: [400, 700], sizes: '400px', ratio: 0.8 })}</div><figcaption><b>High-gloss showroom</b>Bright, reflective finish for retail</figcaption></figure>
+    <figure><div>${img('warehouse', { keep: true, widths: [400, 700], sizes: '400px', ratio: 4 / 4.2 })}</div><figcaption><b>Light-reflective industrial</b>Brighter aisles with high-build coatings</figcaption></figure>
   </div>
 </section>
 
@@ -343,6 +344,7 @@ export function renderHome() {
   </div>
 </section>`;
 
+  endDedupe();
   return layout({
     path: '/',
     title: 'Epoxy Flooring Flagstaff | Garage & Concrete Floor Coatings',
