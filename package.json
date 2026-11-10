@@ -1,0 +1,14 @@
+{
+  "name": "epoxyflooringflagstaffaz",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Epoxy Flooring Flagstaff — static site and Cloudflare Worker",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "npx wrangler dev",
+    "deploy": "node build.mjs && npx wrangler deploy"
+  },
+  "engines": { "node": ">=18" }
+}
