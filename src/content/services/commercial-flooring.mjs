@@ -1,5 +1,5 @@
 export default {
-  slug: 'commercial-epoxy-flooring',
+  slug: 'commercial-flooring',
   name: 'Commercial Epoxy Flooring',
   tagline: 'Breweries, restaurants, shops and clinics',
   summary: 'Seamless, washable floors for breweries, restaurants, outdoor retailers, clinics and lodging, scheduled around your season.',
@@ -127,6 +127,6 @@ We are used to working with those conditions and with landlords and neighbors in
     {"q": "Do you handle trench drains in brewery floors?", "a": "Yes. Trench and floor drains are detailed carefully, with the system carried into the drain edges and the floor sloped where needed. Drains are one of the most common failure points, so they get extra attention."},
     {"q": "Can you match our brand colors?", "a": "Solid color systems can be tinted close to most brand colors, and flake blends can be chosen to complement them. We test samples in your space before committing."},
   ],
-  related: ['warehouse-floor-coatings', 'decorative-flake-flooring', 'metallic-epoxy-flooring'],
+  related: ['industrial-floor-coatings', 'flake-chip-floors'],
   cta: { heading: 'Plan your commercial floor', body: 'Tell us about your space, your busy seasons and your cleaning routine. We will walk the site and send a written proposal with a schedule that works for your business.' },
 };

@@ -1,5 +1,5 @@
 export default {
-  slug: 'garage-floor-coatings',
+  slug: 'winter-garage-floor-coatings',
   name: 'Garage Floor Coatings',
   tagline: 'Sealed, textured garage floors built for snowmelt',
   summary: 'Repair winter-scaled slabs and seal them under a textured, deicer-resistant coating that keeps slush on the surface.',
@@ -43,9 +43,9 @@ The result is a flat, solid surface that the base coat can bond into. It is the 
       body: 'Most garages here end up with one of these builds. The right one depends on how damaged the slab is, whether the garage is heated, and the look you want.',
       items: [
         { name: 'Textured flake system', body: 'A base coat with a full broadcast of vinyl flakes and a clear, slip-resistant topcoat. Hides cinder scratches and grit, and gives good grip when the floor is wet. Our most common recommendation.' },
-        { name: 'Polyurea base with flake', body: 'A flexible base coat that handles the temperature swings of an unheated garage better than rigid epoxy. Good for older or cracked slabs. More on [polyurea coatings](/polyurea-floor-coatings/).' },
+        { name: 'Polyurea base with flake', body: 'A flexible base coat that handles the temperature swings of an unheated garage better than rigid epoxy. Good for older or cracked slabs. More on [polyurea coatings](/polyurea-coatings/).' },
         { name: 'Solid color with grit topcoat', body: 'A clean, single-color floor with aggregate in the topcoat for traction. Popular in shops and garages that double as gyms.' },
-        { name: 'Fast-cure cold-season build', body: 'A [polyaspartic](/polyaspartic-floor-coatings/) system that cures at lower temperatures, useful for late-fall and winter installs in garages that can be kept above the minimum.' },
+        { name: 'Fast-cure cold-season build', body: 'A [polyaspartic](/polyaspartic-coatings/) system that cures at lower temperatures, useful for late-fall and winter installs in garages that can be kept above the minimum.' },
       ],
     },
     {
@@ -128,6 +128,6 @@ Rinse deicer residue every few weeks in heavy winters, using water and a neutral
     { q: 'Do I need to coat the stem walls?', a: 'It is optional, but many people do. Coating the low concrete walls around the garage edge gives a cleaner look and protects them from splashing slush and salt.' },
     { q: 'What happens to my garage cabinets?', a: 'Wall-hung storage can stay. Floor-standing cabinets usually need to be moved so we can coat underneath, or we coat neatly up to them. We will discuss the best approach at the estimate.' },
   ],
-  related: ['polyurea-floor-coatings', 'polyaspartic-floor-coatings', 'decorative-flake-flooring'],
+  related: ['polyurea-coatings', 'polyaspartic-coatings', 'flake-chip-floors'],
   cta: { heading: 'Get your garage ready for winter', body: 'Book a free visit. We will check the slab for scaling and moisture, show you flake samples and leave a written estimate with a recommended install window.' },
 };

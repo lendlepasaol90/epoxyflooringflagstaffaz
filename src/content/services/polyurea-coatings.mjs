@@ -1,5 +1,5 @@
 export default {
-  slug: 'polyurea-floor-coatings',
+  slug: 'polyurea-coatings',
   name: 'Polyurea Floor Coatings',
   tagline: 'Flexible base coats for freeze-thaw and unheated shops',
   summary: 'A tough, flexible base coat that moves with slabs through freeze-thaw swings in unheated garages, shops and barns.',
@@ -59,7 +59,7 @@ For a heated, newer garage with few cracks, a quality epoxy base may serve just 
       toc: 'System options',
       body: 'Polyurea is usually the foundation of a system rather than the only layer.',
       items: [
-        { name: 'Polyurea, flake and polyaspartic', body: 'Our standard build for unheated garages: flexible base, textured flake and a UV-stable [polyaspartic](/polyaspartic-floor-coatings/) topcoat.' },
+        { name: 'Polyurea, flake and polyaspartic', body: 'Our standard build for unheated garages: flexible base, textured flake and a UV-stable [polyaspartic](/polyaspartic-coatings/) topcoat.' },
         { name: 'Pigmented polyurea with grit top', body: 'A solid-color, high-traction floor for shops, barns and equipment bays.' },
         { name: 'High-build polyurea', body: 'A thicker application for heavy-use areas with rolling loads and impact.' },
         { name: 'Flexible joint and crack repair', body: 'Polyurea-based fillers that move with the slab, used even under other systems.' },
@@ -117,6 +117,6 @@ Where it pays off is the third or fourth winter. Rigid floors in cold shops tend
     {"q": "Is polyurea a good choice for a heated garage?", "a": "It works well anywhere, but its biggest advantage is in spaces with large temperature swings. In a heated garage with a sound, newer slab, a quality epoxy base may be just as effective and slightly less expensive."},
     {"q": "Can you coat around a floor drain in my shop?", "a": "Yes. We grind and detail the area around drains carefully and carry the coating into the drain edge so water does not get under the system. Sloping problems around drains are best identified at the estimate."},
   ],
-  related: ['garage-floor-coatings', 'warehouse-floor-coatings', 'polyaspartic-floor-coatings'],
+  related: ['winter-garage-floor-coatings', 'industrial-floor-coatings', 'polyaspartic-coatings'],
   cta: { heading: 'Find out if a flexible base fits your slab', body: 'We will map cracks, check temperatures and moisture and explain whether polyurea is worth it for your floor, with written prices.' },
 };

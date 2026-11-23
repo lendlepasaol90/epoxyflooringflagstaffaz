@@ -1,5 +1,5 @@
 export default {
-  slug: 'residential-epoxy-flooring',
+  slug: 'home-floor-coatings',
   name: 'Residential Epoxy Flooring',
   tagline: 'Basements, mudrooms and lower levels that handle real life',
   summary: 'Seamless floors for basements, mudrooms, laundry rooms and cabin lower levels that take boots, dogs and wet gear.',
@@ -48,7 +48,7 @@ We also look for signs of active water, such as efflorescence along walls or sta
       items: [
         { name: 'Satin solid color', body: 'Soft sheen in greys, warm stone or deep green. Calm, modern and forgiving of footprints.' },
         { name: 'Fine flake', body: 'A tight speckle that hides grit and dog hair between cleanings. Ideal for mudrooms.' },
-        { name: 'Metallic', body: 'Reflective, flowing pigments for finished basements and family rooms. See [metallic epoxy](/metallic-epoxy-flooring/).' },
+        { name: 'Metallic', body: 'Reflective, flowing pigments for finished basements and family rooms. See metallic epoxy.' },
         { name: 'Clear sealed concrete', body: 'For slabs with character worth keeping, a clear system protects without hiding the concrete.' },
       ],
       after: `For mudrooms and entries, we nearly always add a fine slip-resistant texture. It is barely visible but makes a real difference when the floor is wet with snowmelt.`,
@@ -118,6 +118,6 @@ Our crews take the extra time interior floors need: more thorough grinding, care
     {"q": "Will an epoxy floor work with dogs?", "a": "Very well. Claws are far less likely to scratch a quality coating than wood or vinyl, accidents clean up easily and a fine texture gives dogs better footing than glossy tile."},
     {"q": "Can an epoxy floor go in a bathroom?", "a": "On a concrete slab, yes. A seamless coating with a fine texture handles water well and has no grout to maintain. We pay close attention to transitions at the tub, shower and doorway."},
   ],
-  related: ['metallic-epoxy-flooring', 'decorative-flake-flooring', 'garage-floor-coatings'],
+  related: ['flake-chip-floors', 'winter-garage-floor-coatings'],
   cta: { heading: 'Plan your interior floor', body: 'We will test the slab, check for radiant heat, bring finish samples and give you a written estimate with timing that suits your household.' },
 };

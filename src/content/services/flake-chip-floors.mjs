@@ -1,5 +1,5 @@
 export default {
-  slug: 'decorative-flake-flooring',
+  slug: 'flake-chip-floors',
   name: 'Decorative Flake Flooring',
   tagline: 'Speckled chip floors that hide cinders and grit',
   summary: 'Colored chips broadcast into the coating for a stone-like speckle that hides cinders, grit and everyday wear.',
@@ -72,7 +72,7 @@ The chips are decorative rather than structural, but they do a lot of practical 
       heading: 'Where flake floors work',
       toc: 'Applications',
       items: [
-        { name: 'Garages', body: 'The default choice for most Flagstaff garages. See our [garage coatings](/garage-floor-coatings/) page.' },
+        { name: 'Garages', body: 'The default choice for most Flagstaff garages. See our [garage coatings](/winter-garage-floor-coatings/) page.' },
         { name: 'Mudrooms', body: 'Fine chips with a slip-resistant top handle wet boots and gear.' },
         { name: 'Basements', body: 'Micro or 1/8" blends give a stone-like look without feeling industrial.' },
         { name: 'Retail and rental shops', body: 'Hides the dirt customers track in from trails and parking lots.' },
@@ -125,12 +125,12 @@ After several years of heavy use, the topcoat may lose some sheen in the main tr
     { q: 'Do flake floors chip or peel?', a: 'The chips are sealed under the topcoat, so they do not wear off. Peeling only happens when prep or moisture issues are ignored, which is why we grind and test every slab.' },
     { q: 'Can I have a custom blend?', a: 'It is possible to order a mix made to your own color choices, but lead times are longer. In practice, seeing a dozen stock blends on your actual floor usually turns up one that fits.' },
     { q: 'Is the surface rough on bare feet?', a: 'Not once the clear coat is on. Underfoot it has a light, even grain, enough to grip in socks or wet boots but smooth enough that a mop glides across it.' },
-    { q: 'Can flake go on a covered porch?', a: 'Yes, with an exterior-rated, UV-stable topcoat and texture for wet conditions. Uncovered surfaces may suit a different system; see our [patio coatings](/patio-concrete-coatings/) page.' },
+    { q: 'Can flake go on a covered porch?', a: 'Yes, with an exterior-rated, UV-stable topcoat and texture for wet conditions. Uncovered surfaces may suit a different system; see our [patio coatings](/porch-patio-concrete-coatings/) page.' },
     { q: 'How long does installation take?', a: 'A typical garage takes one to two days, plus cure time that depends on temperature. Mudrooms and smaller rooms are often faster.' },
     {"q": "Will a flake floor hide salt stains?", "a": "Salt residue sits on top of the sealed surface rather than soaking in, so it wipes off. Between cleanings, a mid-tone blend disguises light residue far better than a plain grey floor."},
     {"q": "Can flake floors be recoated later?", "a": "Yes. When the clear topcoat dulls after years of use, it can be lightly sanded and recoated. The chip layer stays protected underneath, so the floor looks refreshed without a full redo."},
     {"q": "Do you coat the floor under a workbench?", "a": "If it can be moved, yes. Fixed benches and cabinets can be coated around neatly. We will discuss which approach makes sense during the estimate."},
   ],
-  related: ['garage-floor-coatings', 'residential-epoxy-flooring', 'patio-concrete-coatings'],
+  related: ['winter-garage-floor-coatings', 'home-floor-coatings', 'porch-patio-concrete-coatings'],
   cta: { heading: 'See the blends on your own floor', body: 'Chip boards in cinder, ponderosa, granite and meadow tones come along to every visit. Lay them on your slab, decide in your own light, and the written price follows.' },
 };
