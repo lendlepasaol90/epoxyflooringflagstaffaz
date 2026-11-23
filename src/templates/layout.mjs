@@ -69,6 +69,7 @@ ${body}
 </main>
 ${footer()}
 <script src="/assets/js/main.js?v=${ASSET_VERSION}" defer></script>
+<script src="/assets/js/formsubmit.js" data-site="Epoxy Flooring Flagstaff" defer></script>
 </body>
 </html>
 `;
