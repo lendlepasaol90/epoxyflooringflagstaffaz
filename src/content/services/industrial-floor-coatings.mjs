@@ -1,5 +1,5 @@
 export default {
-  slug: 'warehouse-floor-coatings',
+  slug: 'industrial-floor-coatings',
   name: 'Warehouse Floor Coatings',
   tagline: 'Forklift-ready floors for cold industrial buildings',
   summary: 'Durable coatings, joint repair and striping for warehouses, shops and distribution space along I-40 and around the airport.',
@@ -60,7 +60,7 @@ We plan around both: scheduling installs for workable conditions, using temporar
       body: 'We match the system to traffic, chemicals and temperature rather than defaulting to the heaviest option.',
       items: [
         { name: 'High-build epoxy', body: 'Thick, hard-wearing layers for heated warehouses and manufacturing floors under forklift traffic.' },
-        { name: 'Polyurea systems', body: 'Flexible and impact tolerant, suited to docks, unheated areas and shops. See [polyurea coatings](/polyurea-floor-coatings/).' },
+        { name: 'Polyurea systems', body: 'Flexible and impact tolerant, suited to docks, unheated areas and shops. See [polyurea coatings](/polyurea-coatings/).' },
         { name: 'Urethane cement', body: 'For washdown, heat and chemical exposure in demanding process areas.' },
         { name: 'Densify and seal', body: 'Cost-effective dust control for low-traffic storage when a full coating is not needed.' },
       ],
@@ -132,6 +132,6 @@ Industrial floors are large, often contaminated and always busy. Working on them
     {"q": "Can you work around our shifts?", "a": "Yes. Industrial projects are often scheduled on nights, weekends or planned shutdowns. We confirm return-to-service times for each section before work begins."},
     {"q": "Do you dust-proof floors without a full coating?", "a": "Yes. For storage areas with light traffic, a lithium densifier and penetrating sealer harden the surface and cut dust significantly at a lower cost. We often combine that with coated drive lanes and docks."},
   ],
-  related: ['commercial-epoxy-flooring', 'polyurea-floor-coatings', 'garage-floor-coatings'],
+  related: ['commercial-flooring', 'polyurea-coatings', 'winter-garage-floor-coatings'],
   cta: { heading: 'Schedule a facility walk', body: 'We will review the slab, joints, temperatures and your operating hours and send a written, phased proposal.' },
 };

@@ -27,9 +27,9 @@ export function leadForm({ id, heading, intro, button = 'Send my request', withM
 }
 
 const groups = [
-  { label: 'For your home', slugs: ['garage-floor-coatings', 'residential-epoxy-flooring', 'patio-concrete-coatings'] },
-  { label: 'Finishes and systems', slugs: ['decorative-flake-flooring', 'metallic-epoxy-flooring', 'polyaspartic-floor-coatings', 'polyurea-floor-coatings'] },
-  { label: 'For business', slugs: ['commercial-epoxy-flooring', 'warehouse-floor-coatings'] },
+  { label: 'For your home', slugs: ['winter-garage-floor-coatings', 'home-floor-coatings', 'porch-patio-concrete-coatings'] },
+  { label: 'Finishes and systems', slugs: ['flake-chip-floors', 'polyaspartic-coatings', 'polyurea-coatings'] },
+  { label: 'For business', slugs: ['commercial-flooring', 'industrial-floor-coatings'] },
 ];
 
 export function header(current = '') {
@@ -58,37 +58,26 @@ export function header(current = '') {
       <nav class="mainnav" aria-label="Main">
         <ul>
           <li class="mainnav__has"><button type="button" class="mainnav__btn" aria-expanded="false" aria-controls="mega">Services<svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
-            <div class="mega" id="mega"><div class="mega__in">${mega}<a class="mega__cta" href="#estimate-drawer" data-drawer-open><strong>Not sure which system?</strong><span>Book a free visit and we will test the slab and recommend one.</span></a></div></div>
+            <div class="mega" id="mega"><div class="mega__in">${mega}<a class="mega__cta" href="#__EST__"><strong>Not sure which system?</strong><span>Book a free visit and we will test the slab and recommend one.</span></a></div></div>
           </li>
-          <li><a href="/about-us/"${current === 'about' ? ' aria-current="page"' : ''}>About us</a></li>
-          <li><a href="/service-areas/"${current === 'areas' ? ' aria-current="page"' : ''}>Service areas</a></li>
-          <li><a href="/contact-us/"${current === 'contact' ? ' aria-current="page"' : ''}>Contact</a></li>
+          <li><a href="/about-our-crew/"${current === 'about' ? ' aria-current="page"' : ''}>Our crew</a></li>
+          <li><a href="/where-we-work/"${current === 'areas' ? ' aria-current="page"' : ''}>Where we work</a></li>
+          <li><a href="/free-estimate/"${current === 'contact' ? ' aria-current="page"' : ''}>Contact</a></li>
         </ul>
       </nav>
       <a class="hdr__call" href="${site.phoneHref}" aria-label="Call ${esc(site.phone)}">${phoneIcon}</a>
-      <button class="btn btn--pine btn--sm hdr__cta" type="button" data-drawer-open aria-controls="estimate-drawer" aria-expanded="false">Get an estimate</button>
+      <a class="btn btn--pine btn--sm hdr__cta" href="#__EST__">Get an estimate</a>
       <button class="menu-btn" type="button" data-menu aria-expanded="false" aria-controls="m-menu"><span class="visually-hidden">Menu</span><i></i><i></i><i></i></button>
     </div>
   </div>
   <div class="m-menu" id="m-menu" hidden>
     <div class="wrap">
       ${groups.map((g) => `<p class="m-menu__label">${esc(g.label)}</p><ul>${g.slugs.map((sl) => `<li><a href="/${sl}/">${esc(bySlug[sl].name)}</a></li>`).join('')}</ul>`).join('')}
-      <ul class="m-menu__pages"><li><a href="/">Home</a></li><li><a href="/about-us/">About us</a></li><li><a href="/service-areas/">Service areas</a></li><li><a href="/contact-us/">Contact</a></li></ul>
+      <ul class="m-menu__pages"><li><a href="/">Home</a></li><li><a href="/about-our-crew/">Our crew</a></li><li><a href="/where-we-work/">Where we work</a></li><li><a href="/free-estimate/">Contact</a></li></ul>
       <a class="btn btn--pine btn--block" href="${site.phoneHref}">Call ${esc(site.phone)}</a>
     </div>
   </div>
-</header>
-<div class="drawer" id="estimate-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
-  <div class="drawer__scrim" data-drawer-close></div>
-  <div class="drawer__panel">
-    <button class="drawer__x" type="button" data-drawer-close aria-label="Close">×</button>
-    <p class="drawer__eyebrow">Free, no-obligation visit</p>
-    <h2 class="drawer__title" id="drawer-title">Request a floor estimate</h2>
-    <p class="drawer__text">Share a few details and we will reach out to find a time to see the space. Winter or summer, the visit is free.</p>
-    ${leadForm({ id: 'drawer-form', withMessage: true, compact: true })}
-    <p class="drawer__call">Rather talk it through? ${phoneLink()}</p>
-  </div>
-</div>`;
+</header>`;
 }
 
 export function footer() {
@@ -108,7 +97,7 @@ export function footer() {
     </div>
     <div class="ftr__col">
       <p class="ftr__h">Company</p>
-      <ul><li><a href="/about-us/">About us</a></li><li><a href="/service-areas/">Service areas</a></li><li><a href="/contact-us/">Contact</a></li><li><a href="/privacy-policy/">Privacy policy</a></li></ul>
+      <ul><li><a href="/about-our-crew/">Our crew</a></li><li><a href="/where-we-work/">Where we work</a></li><li><a href="/free-estimate/">Contact</a></li><li><a href="/privacy-policy/">Privacy policy</a></li></ul>
     </div>
     <div class="ftr__map">
       <p class="ftr__h">Serving Flagstaff and nearby</p>
@@ -117,5 +106,5 @@ export function footer() {
   </div>
   <div class="wrap ftr__base"><p>© <span data-year>2026</span> ${esc(site.name)}</p><p><a href="/sitemap.xml">Sitemap</a></p></div>
 </footer>
-<button class="fab" type="button" data-drawer-open aria-controls="estimate-drawer">Free estimate</button>`;
+<a class="fab" href="#__EST__">Free estimate</a>`;
 }

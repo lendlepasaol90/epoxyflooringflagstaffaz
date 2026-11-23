@@ -1,5 +1,5 @@
 export default {
-  slug: 'polyaspartic-floor-coatings',
+  slug: 'polyaspartic-coatings',
   name: 'Polyaspartic Floor Coatings',
   tagline: 'Cures in the cold and holds color in high-altitude sun',
   summary: 'A fast, cold-tolerant coating that cures in cooler weather and resists UV, ideal for Flagstaff’s short install seasons.',
@@ -49,7 +49,7 @@ The trade-off is that fast cure means a short pot life. Once mixed, the material
         ['Working time', 'Longer, more forgiving', 'Short; needs an experienced crew'],
         ['Typical role', 'Base and build layers, metallic work', 'Topcoat, fast-cure full systems'],
       ],
-      after: `A common Flagstaff build is a flexible [polyurea base](/polyurea-floor-coatings/), a flake broadcast and a slip-resistant polyaspartic topcoat. It combines a strong, flexible bond with a fast, sun-proof finish.`,
+      after: `A common Flagstaff build is a flexible [polyurea base](/polyurea-coatings/), a flake broadcast and a slip-resistant polyaspartic topcoat. It combines a strong, flexible bond with a fast, sun-proof finish.`,
     },
     {
       kind: 'options',
@@ -123,6 +123,6 @@ The short working time also demands an organized crew: correct mix ratios, small
     {"q": "Is polyaspartic more expensive than epoxy?", "a": "The material usually costs more, but the overall difference on a garage is often modest because preparation and labor make up most of the price. The shorter downtime and sun resistance are what many Flagstaff owners decide are worth it."},
     {"q": "Can polyaspartic go over an old epoxy floor?", "a": "If the old coating is well bonded, it can often be abraded and topcoated with polyaspartic, which refreshes the look and adds UV resistance. Failing coatings need to be removed first."},
   ],
-  related: ['garage-floor-coatings', 'polyurea-floor-coatings', 'patio-concrete-coatings'],
+  related: ['winter-garage-floor-coatings', 'polyurea-coatings', 'porch-patio-concrete-coatings'],
   cta: { heading: 'Ask about a fast, cold-season install', body: 'We will check slab temperature, moisture and sun exposure and recommend a schedule that suits your floor and the weather.' },
 };

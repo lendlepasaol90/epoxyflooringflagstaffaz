@@ -1,5 +1,5 @@
 export default {
-  slug: 'patio-concrete-coatings',
+  slug: 'porch-patio-concrete-coatings',
   name: 'Patio & Concrete Coatings',
   tagline: 'Porches, walkways, steps and hot tub pads',
   summary: 'Coatings and sealers for porches, patios, entry steps, walkways and hot tub pads that face snow, shovels and strong sun.',
@@ -118,6 +118,6 @@ Penetrating sealers generally need reapplication every few years, depending on e
     {"q": "Can you make my porch less slippery in winter?", "a": "Yes. On a covered porch, a textured coating with slip-resistant aggregate makes a real difference with snowmelt and frost. On uncovered surfaces, a penetrating sealer keeps the natural concrete texture, which grips better than most film-forming coatings."},
     {"q": "Do you work on concrete stairs to the front door?", "a": "Yes. Steps often need edge and nosing repairs before anything else. Covered steps can take a textured coating; exposed ones usually do better with repairs and a breathable sealer."},
   ],
-  related: ['polyaspartic-floor-coatings', 'decorative-flake-flooring', 'garage-floor-coatings'],
+  related: ['polyaspartic-coatings', 'flake-chip-floors', 'winter-garage-floor-coatings'],
   cta: { heading: 'Protect your outdoor concrete before winter', body: 'We will look at your porch, steps and walkways, recommend a coating or sealer for each and give you a written estimate.' },
 };

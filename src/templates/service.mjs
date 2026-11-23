@@ -58,7 +58,7 @@ export function renderService(s) {
       </div>
       <div class="titlecard__side">
         ${s.chips ? `<ul class="facts-list">${s.chips.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}
-        <button class="btn btn--pine" type="button" data-drawer-open aria-controls="estimate-drawer">Book a free estimate</button>
+        <a class="btn btn--pine" href="#__EST__">Book a free estimate</a>
         <a class="btn btn--line" href="${site.phoneHref}">Call ${esc(site.phone)}</a>
       </div>
     </div>
@@ -93,7 +93,7 @@ ${related.length ? `<section class="sec sec--sm" aria-labelledby="rel-h"><div cl
     <div class="rv">
       <h2 id="est-h">${esc(s.cta.heading)}</h2>
       ${md(s.cta.body)}
-      <ul class="close__facts"><li>Phone <b>${phoneLink()}</b></li><li>Estimate visits <b>Free, in person</b></li><li>Coverage <b><a href="/service-areas/">Flagstaff and nearby</a></b></li></ul>
+      <ul class="close__facts"><li>Phone <b>${phoneLink()}</b></li><li>Estimate visits <b>Free, in person</b></li><li>Coverage <b><a href="/where-we-work/">Flagstaff and nearby</a></b></li></ul>
     </div>
     <div class="close__card rv d1">${leadForm({ id: `${s.slug}-form`, heading: 'Tell us about the floor', withMessage: true, preset: s.formPreset })}</div>
   </div>

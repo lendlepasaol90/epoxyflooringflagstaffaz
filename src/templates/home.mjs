@@ -69,7 +69,7 @@ export function renderHome() {
         <h1 id="hero-h">Concrete floors made for mountain winters</h1>
         <p class="big">Garage, home and commercial floor coatings for Flagstaff and Northern Arizona. We repair winter-damaged slabs and seal them against snowmelt, cinders, deicer and high-country sun.</p>
         <div class="hero__btns">
-          <button class="btn btn--pine" type="button" data-drawer-open aria-controls="estimate-drawer">Request a free estimate</button>
+          <a class="btn btn--pine" href="#__EST__">Request a free estimate</a>
           <a class="btn btn--line" href="#services">Explore coatings</a>
         </div>
       </div>
@@ -88,7 +88,7 @@ export function renderHome() {
     <div class="rv d1">
       <h2 id="intro-h">Epoxy and resin floors for high-country homes and businesses</h2>
       <p>We coat concrete for people who live and work at altitude. That means garages that see snowmelt for half the year, cabins that sit empty through the cold months, breweries and shops downtown, and warehouses out along I-40. Each one asks something different from a floor.</p>
-      <p>Our job is to figure out what that is. We look at the slab first: how old it is, whether it is scaling or cracked, whether it holds moisture, and whether the space is heated. Then we recommend a system that will actually hold up, whether that is a <a href="/garage-floor-coatings/">garage floor coating</a> with a textured flake finish, a fast-curing <a href="/polyaspartic-floor-coatings/">polyaspartic</a> build for a cold-season install, a flexible <a href="/polyurea-floor-coatings/">polyurea</a> base for a cracked slab or a seamless <a href="/commercial-epoxy-flooring/">commercial floor</a> that stays easy to clean.</p>
+      <p>Our job is to figure out what that is. We look at the slab first: how old it is, whether it is scaling or cracked, whether it holds moisture, and whether the space is heated. Then we recommend a system that will actually hold up, whether that is a <a href="/winter-garage-floor-coatings/">garage floor coating</a> with a textured flake finish, a fast-curing <a href="/polyaspartic-coatings/">polyaspartic</a> build for a cold-season install, a flexible <a href="/polyurea-coatings/">polyurea</a> base for a cracked slab or a seamless <a href="/commercial-flooring/">commercial floor</a> that stays easy to clean.</p>
       <p>Every estimate is free and done in person. You get a written quote, an honest read on the slab, and a clear timeline based on the season.</p>
     </div>
   </div>
@@ -97,19 +97,18 @@ export function renderHome() {
 <section class="sec sec--sage" id="services" aria-labelledby="svc-h">
   <div class="wrap">
     <div class="row-head sec__head" style="max-width:none">
-      <div style="max-width:620px"><h2 id="svc-h" class="rv">What we coat</h2><p class="soft rv">Nine coating services, each with a dedicated page covering finishes, cure times, costs and how it handles Flagstaff conditions.</p></div>
+      <div style="max-width:620px"><h2 id="svc-h" class="rv">What we coat</h2><p class="soft rv">Eight coating services, each with a dedicated page covering finishes, cure times, costs and how it handles Flagstaff conditions.</p></div>
     </div>
     <div class="bento">
-      ${tile('garage-floor-coatings', 'tile--big', true)}
-      ${tile('residential-epoxy-flooring', '', false)}
-      ${tile('decorative-flake-flooring', 'tile--sage', false)}
-      ${tile('commercial-epoxy-flooring', 'tile--wide', true)}
-      ${tile('polyaspartic-floor-coatings', '', false)}
-      ${tile('metallic-epoxy-flooring', '', true)}
-      ${tile('polyurea-floor-coatings', 'tile--sage', false)}
-      ${tile('patio-concrete-coatings', '', false)}
-      ${tile('warehouse-floor-coatings', 'tile--wide', true)}
-      <button class="tile tile--wide tile--cta rv" type="button" data-drawer-open aria-controls="estimate-drawer"><span class="tile__go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><h3>Not sure which system fits?</h3><p>Book a free visit. We will test the slab, check whether the space is heated and recommend a coating that suits it.</p></button>
+      ${tile('winter-garage-floor-coatings', 'tile--big', true)}
+      ${tile('home-floor-coatings', '', false)}
+      ${tile('flake-chip-floors', 'tile--sage', false)}
+      ${tile('commercial-flooring', 'tile--wide', true)}
+      ${tile('polyaspartic-coatings', '', false)}
+      ${tile('polyurea-coatings', 'tile--sage', false)}
+      ${tile('porch-patio-concrete-coatings', '', false)}
+      ${tile('industrial-floor-coatings', 'tile--wide', true)}
+      <a class="tile tile--wide tile--cta rv" href="#__EST__"><span class="tile__go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><h3>Not sure which system fits?</h3><p>Book a free visit. We will test the slab, check whether the space is heated and recommend a coating that suits it.</p></a>
     </div>
   </div>
 </section>
@@ -152,7 +151,7 @@ export function renderHome() {
         <li>Textured finishes for grip when the floor is wet with slush</li>
         <li>Options for unheated garages, including cold-season installs</li>
       </ul>
-      <a class="link" href="/garage-floor-coatings/">Garage coatings in detail</a>
+      <a class="link" href="/winter-garage-floor-coatings/">Garage coatings in detail</a>
     </div>
   </div>
 </section>
@@ -163,7 +162,7 @@ export function renderHome() {
     <div class="rv">
       <h2 id="res-h">Residential epoxy for mudrooms, basements and cabins</h2>
       <p>Mountain living is hard on floors. Boots, skis, wet dogs, firewood and the occasional muddy bike all come through the door, and the rooms that take the abuse are often on a concrete slab: mudrooms, basements, laundry rooms, workshops and the lower level of many hillside homes.</p>
-      <p>A residential coating gives those spaces a seamless, washable surface that does not mind water or grit. It can be practical and simple, like a satin solid color in a laundry room, or a design feature, like a metallic finish in a finished basement. Moisture testing matters even more indoors, since some older Flagstaff slabs were poured without a good vapor barrier. Learn more on our <a href="/residential-epoxy-flooring/">residential epoxy flooring</a> page.</p>
+      <p>A residential coating gives those spaces a seamless, washable surface that does not mind water or grit. It can be practical and simple, like a satin solid color in a laundry room, or a design feature, like a metallic finish in a finished basement. Moisture testing matters even more indoors, since some older Flagstaff slabs were poured without a good vapor barrier. Learn more on our <a href="/home-floor-coatings/">residential epoxy flooring</a> page.</p>
     </div>
   </div>
 </section>
@@ -175,7 +174,7 @@ export function renderHome() {
       <div class="rv">
         <h2 id="deco-h">Decorative and metallic epoxy flooring</h2>
         <p>Floors can be beautiful as well as tough. Decorative flake systems scatter colored chips through the coating for a speckled stone look that hides grit. Metallic epoxy goes further, using reflective pigments worked by hand into swirls and drifts that look like polished stone or a frozen lake surface.</p>
-        <p>We often suggest palettes drawn from the landscape around town: basalt greys, pine and moss greens, the warm tan of ponderosa bark and the gold of the aspens in October. See <a href="/decorative-flake-flooring/">decorative flake</a> and <a href="/metallic-epoxy-flooring/">metallic epoxy</a>.</p>
+        <p>We often suggest palettes drawn from the landscape around town: basalt greys, pine and moss greens, the warm tan of ponderosa bark and the gold of the aspens in October. See <a href="/flake-chip-floors/">decorative flake</a> and metallic epoxy.</p>
       </div>
       <div class="swatches rv d1">
         <div class="swatch"><i style="background:linear-gradient(135deg,#55595a,#2b2e2f)"></i><strong>Basalt</strong><span>Charcoal flake or slate metallic. Hides cinders and tire marks well.</span></div>
@@ -197,7 +196,7 @@ export function renderHome() {
           <h3 style="font-size:1.45rem">Commercial epoxy flooring</h3>
           <p>From breweries and restaurants to outdoor gear shops, clinics and offices, commercial floors here need to handle constant washdown, tracked-in snow and heavy foot traffic. Seamless resin floors clean quickly, resist chemicals and can be made slip-resistant where floors get wet.</p>
           <ul><li>Breweries and taprooms</li><li>Restaurant kitchens</li><li>Retail and rental shops</li><li>Clinics and offices</li><li>Fitness studios</li><li>Hotel back-of-house</li></ul>
-          <a class="link" href="/commercial-epoxy-flooring/">Commercial floors</a>
+          <a class="link" href="/commercial-flooring/">Commercial floors</a>
         </div>
       </article>
       <article class="biz__card rv d1">
@@ -206,7 +205,7 @@ export function renderHome() {
           <h3 style="font-size:1.45rem">Industrial flooring solutions</h3>
           <p>Warehouses, distribution space, fabrication shops and maintenance bays around the airport, east Flagstaff and Bellemont need floors that take forklift traffic and stop concrete dust. We use high-build epoxy and polyurea systems, repair joints and add safety striping, scheduled in phases so work keeps moving.</p>
           <ul><li>Warehouses and storage</li><li>Fabrication shops</li><li>Fleet and equipment bays</li><li>Joint repair</li><li>Lane and zone striping</li><li>Dust-proofing</li></ul>
-          <a class="link" href="/warehouse-floor-coatings/">Warehouse coatings</a>
+          <a class="link" href="/industrial-floor-coatings/">Warehouse coatings</a>
         </div>
       </article>
     </div>
@@ -233,7 +232,7 @@ export function renderHome() {
     <h2 id="bleed-h">Get your floor sealed before the first snow</h2>
     <p>Fall fills up quickly. Book an estimate early and we can plan your project for the best window of the year, while slabs are dry and days are mild.</p>
     <ul class="bleed__row"><li>Free on-site estimates</li><li>Repairs for scaled, pitted concrete</li><li>Cold-season install options</li></ul>
-    <button class="btn btn--aspen" type="button" data-drawer-open aria-controls="estimate-drawer">Book my estimate</button>
+    <a class="btn btn--aspen" href="#__EST__">Book my estimate</a>
   </div>
 </section>
 
@@ -293,7 +292,7 @@ export function renderHome() {
       <h3>A note for cabin and second-home owners</h3>
       <p>Garages and lower levels in seasonal homes often sit cold and damp for months. Moisture can build up in the slab, and a floor that looked fine in summer can start to flake by spring.</p>
       <p>We can schedule work while you are away, coordinate access with a neighbor or property manager and send updates as the job progresses. Fast-curing systems mean the floor is usually ready well before your next visit.</p>
-      <button class="btn btn--pine btn--sm" type="button" data-drawer-open aria-controls="estimate-drawer">Plan a project</button>
+      <a class="btn btn--pine btn--sm" href="#__EST__">Plan a project</a>
     </aside>
   </div>
 </section>
@@ -317,9 +316,9 @@ export function renderHome() {
   <div class="topo-bg" aria-hidden="true">${topo}</div>
   <div class="wrap areas">
     <div class="rv">
-      <h2 id="areas-h">Service areas</h2>
+      <h2 id="areas-h">Where we work</h2>
       <p>We work throughout Flagstaff and the communities within a reasonable drive in the pines. Projects further afield, especially commercial ones, are welcome too. Just ask.</p>
-      <a class="link" href="/service-areas/">More about our service areas</a>
+      <a class="link" href="/where-we-work/">More about our service areas</a>
     </div>
     <ul class="areas__list rv d1">${site.serviceAreas.map((a) => `<li><strong>${esc(a.name)}</strong><span>${esc(a.note)}</span></li>`).join('')}</ul>
   </div>

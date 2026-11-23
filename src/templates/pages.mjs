@@ -10,7 +10,7 @@ const head = ({ title, lede, image, trail }) => `<div class="band">${img(image, 
 const side = (id) => `<aside class="side-card">${leadForm({ id, heading: 'Free estimate', intro: 'Tell us a little about the floor and we will follow up to schedule a visit.', compact: true })}</aside>`;
 
 export function renderAbout() {
-  const trail = [{ name: 'Home', path: '/' }, { name: 'About us', path: '/about-us/' }];
+  const trail = [{ name: 'Home', path: '/' }, { name: 'Our crew', path: '/about-our-crew/' }];
   const body = `${head({ title: 'About Epoxy Flooring Flagstaff', lede: 'A Northern Arizona floor coating team that plans every job around the slab, the season and the people who use the space.', image: 'pineTrunks', trail })}
 <section class="sec sec--sm"><div class="wrap page-grid"><div class="rv">
 ${md(`Floors at altitude live a different life from floors in the desert below. Concrete freezes and thaws dozens of times a winter. Garages fill with meltwater, cinders and deicer. Sunlight is stronger than people expect, and the best weather for coating work comes in short windows between seasons.
@@ -34,9 +34,9 @@ Honestly, most of it is unglamorous. Grinding the slab properly. Taking the time
 ## Getting started
 
 Call or send the form, and we will set up a visit. We will look at the floor, show you samples and explain what we would recommend and why. You get a written estimate afterward, with no pressure to decide on the spot.`)}
-<p style="margin-top:1.5rem"><a class="btn btn--pine" href="/contact-us/">Contact us</a> <a class="btn btn--line" href="/service-areas/">Where we work</a></p>
+<p style="margin-top:1.5rem"><a class="btn btn--pine" href="/free-estimate/">Contact us</a> <a class="btn btn--line" href="/where-we-work/">Where we work</a></p>
 </div>${side('about-form')}</div></section>`;
-  return layout({ path: '/about-us/', title: 'About Us | Epoxy Flooring Flagstaff', description: 'Learn how Epoxy Flooring Flagstaff plans floor coatings around the slab, the season and mountain conditions, and what to expect from your free estimate.', body, current: 'about', image: 'pineTrunks', breadcrumbs: trail });
+  return layout({ path: '/about-our-crew/', title: 'Our crew | Epoxy Flooring Flagstaff', description: 'Learn how Epoxy Flooring Flagstaff plans floor coatings around the slab, the season and mountain conditions, and what to expect from your free estimate.', body, current: 'about', image: 'pineTrunks', breadcrumbs: trail });
 }
 
 const towns = {
@@ -52,8 +52,8 @@ const towns = {
 };
 
 export function renderAreas() {
-  const trail = [{ name: 'Home', path: '/' }, { name: 'Service areas', path: '/service-areas/' }];
-  const body = `${head({ title: 'Service areas in Flagstaff and Northern Arizona', lede: 'We cover Flagstaff and the surrounding high country for residential projects, and travel further for commercial and industrial floors.', image: 'meadow', trail })}
+  const trail = [{ name: 'Home', path: '/' }, { name: 'Where we work', path: '/where-we-work/' }];
+  const body = `${head({ title: 'Where we work in Flagstaff and Northern Arizona', lede: 'We cover Flagstaff and the surrounding high country for residential projects, and travel further for commercial and industrial floors.', image: 'meadow', trail })}
 <section class="sec sec--sm"><div class="wrap">
   <div class="measure rv">${md(`Distance matters on coating jobs here. Mountain weather changes quickly, and many systems have tight temperature and timing windows. Staying close to Flagstaff lets us start early, watch the forecast and adjust plans without losing a day.
 
@@ -62,11 +62,11 @@ The communities below are where we work most often. If you are outside them, giv
   <div class="measure rv" style="margin-top:3rem"><h2>Every service, in every area</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${esc(s.name)}</a>: ${esc(s.tagline)}</li>`).join('')}</ul></div>
 </div></section>
 <section class="sec close" id="estimate"><div class="wrap close__grid"><div><h2>Not sure if you are in range?</h2><p>Send your details and we will confirm when we follow up. Or call ${phoneLink()}.</p></div><div class="close__card">${leadForm({ id: 'areas-form', heading: 'Request an estimate', withMessage: true })}</div></div></section>`;
-  return layout({ path: '/service-areas/', title: 'Service Areas | Epoxy Flooring Flagstaff & Northern Arizona', description: 'Floor coatings in Flagstaff, Doney Park, Timberline, Kachina Village, Mountainaire, Munds Park, Bellemont, Williams and Winona.', body, current: 'areas', image: 'meadow', breadcrumbs: trail });
+  return layout({ path: '/where-we-work/', title: 'Where we work | Epoxy Flooring Flagstaff & Northern Arizona', description: 'Floor coatings in Flagstaff, Doney Park, Timberline, Kachina Village, Mountainaire, Munds Park, Bellemont, Williams and Winona.', body, current: 'areas', image: 'meadow', breadcrumbs: trail });
 }
 
 export function renderContact() {
-  const trail = [{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact-us/' }];
+  const trail = [{ name: 'Home', path: '/' }, { name: 'Contact', path: '/free-estimate/' }];
   const body = `${head({ title: 'Contact us', lede: 'Ask a question or book a free estimate. Tell us about the floor and we will take it from there.', image: 'forestPath', trail })}
 <section class="sec sec--sm" id="estimate"><div class="wrap close__grid" style="align-items:start">
   <div class="rv">
@@ -79,7 +79,7 @@ export function renderContact() {
   </div>
   <div class="side-card rv d1" style="position:static">${leadForm({ id: 'contact-form', heading: 'Request your free estimate', withMessage: true })}</div>
 </div></section>`;
-  return layout({ path: '/contact-us/', title: 'Contact Us | Free Floor Coating Estimates in Flagstaff', description: 'Request a free, in-person estimate for garage, home or commercial floor coatings in Flagstaff and nearby Northern Arizona communities.', body, current: 'contact', image: 'forestPath', breadcrumbs: trail });
+  return layout({ path: '/free-estimate/', title: 'Contact Us | Free Floor Coating Estimates in Flagstaff', description: 'Request a free, in-person estimate for garage, home or commercial floor coatings in Flagstaff and nearby Northern Arizona communities.', body, current: 'contact', image: 'forestPath', breadcrumbs: trail });
 }
 
 export function renderPrivacy() {
@@ -99,7 +99,7 @@ Form submissions may pass through an email or workflow service so they reach us.
 
 ## Your choices
 
-To update or delete information you have sent us, get in touch through our [contact page](/contact-us/).
+To update or delete information you have sent us, get in touch through our [contact page](/free-estimate/).
 
 ## Updates
 
@@ -108,6 +108,6 @@ This policy may change over time. The latest version always lives on this page.`
 }
 
 export function render404() {
-  const body = `<section class="lost"><div class="wrap measure center"><h1>Trail ends here</h1><p class="big">That page does not exist or has moved. These will get you back on track.</p><p><a class="btn btn--pine" href="/">Homepage</a> <a class="btn btn--line" href="/garage-floor-coatings/">Garage coatings</a> <a class="btn btn--line" href="/contact-us/">Contact</a></p></div></section>`;
+  const body = `<section class="lost"><div class="wrap measure center"><h1>Trail ends here</h1><p class="big">That page does not exist or has moved. These will get you back on track.</p><p><a class="btn btn--pine" href="/">Homepage</a> <a class="btn btn--line" href="/winter-garage-floor-coatings/">Garage coatings</a> <a class="btn btn--line" href="/free-estimate/">Contact</a></p></div></section>`;
   return layout({ path: '/404.html', title: 'Page not found | Epoxy Flooring Flagstaff', description: 'The page you were looking for could not be found.', body }).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex">');
 }
