@@ -1,7 +1,15 @@
 // Site-wide configuration for Epoxy Flooring Flagstaff.
 
 export const site = {
-  name: 'Epoxy Flooring Flagstaff',
+  name: "Flagstaff Epoxy Flooring",
+  owner: "Craig Docksey",
+  category: 'Flooring Contractor',
+  description: "Flagstaff Epoxy Flooring provides durable, attractive concrete floor coatings for homes and businesses throughout Flagstaff, AZ. From garages exposed to snow, road salt, and changing mountain temperatures to busy commercial spaces, we offer flooring solutions designed for Northern Arizona conditions. Our services include garage epoxy flooring, decorative flake coatings, metallic epoxy floors, concrete grinding, surface preparation, patio coatings, and commercial epoxy flooring. Whether you're upgrading a residential garage, workshop, or business facility, we focus on quality workmanship, dependable protection, and easy-to-maintain finishes. Proudly serving Flagstaff and surrounding Northern Arizona communities.",
+  address: { street: "1425 W Forest Meadows St #339", city: "Flagstaff", state: 'AZ', zip: '86001', country: 'US' },
+  hours: [
+    { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], label: 'Monday – Saturday', opens: '07:00', closes: '18:00', text: '7:00 AM – 6:00 PM' },
+    { days: ['Sunday'], label: 'Sunday', closed: true, text: 'Closed' },
+  ],
   domain: 'https://epoxyflooringflagstaffaz.com',
   city: 'Flagstaff',
   cityLong: 'Flagstaff',
@@ -9,14 +17,13 @@ export const site = {
   state: 'AZ',
   locale: 'en_US',
 
-  // PLACEHOLDER — replace with the real business number before launch,
   // then set phoneVerified: true so it is included in structured data.
-  phone: '(928) 555-0177',
-  phoneHref: 'tel:+19285550177',
-  phoneVerified: false,
-  email: '',
+  phone: '(928) 395-6976',
+  phoneHref: 'tel:+19283956976',
+  phoneVerified: true,
+  email: 'info@epoxyflooringflagstaffaz.com',
 
-  map: { query: 'Flagstaff, AZ', lat: 35.1983, lng: -111.6513, zoom: 11 },
+  map: { query: "1425 W Forest Meadows St #339, Flagstaff, AZ 86001", lat: 35.188, lng: -111.664, zoom: 13 },
 
   serviceAreas: [
     { name: 'Flagstaff', note: 'Every neighborhood, from Cheshire and Continental to Sunnyside and Southside.' },

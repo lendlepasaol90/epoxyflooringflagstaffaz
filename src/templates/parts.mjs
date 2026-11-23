@@ -1,3 +1,4 @@
+import { addressOneLine, addressHtml, directionsUrl, hoursHtml, hoursShort } from '../lib/nap.mjs';
 import { site } from '../site.mjs';
 import { esc } from '../lib/html.mjs';
 import { services } from '../content/services/index.mjs';
@@ -93,7 +94,7 @@ export function header(current = '') {
 
 export function footer() {
   const m = site.map;
-  const src = `https://maps.google.com/maps?q=${encodeURIComponent(m.query)}&ll=${m.lat},${m.lng}&z=${m.zoom}&output=embed`;
+  const src = `https://maps.google.com/maps?q=${encodeURIComponent(`${site.name}, ${m.query}`)}&z=${m.zoom}&output=embed`;
   return `<footer class="ftr">
   <svg class="ftr__topo" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C200 60 320 140 520 90 S860 30 1200 80" /><path d="M0 140 C220 90 340 160 540 115 S880 60 1200 105" /><path d="M0 100 C180 40 300 120 500 65 S840 0 1200 55" /></svg>
   <div class="wrap ftr__grid">
@@ -101,6 +102,7 @@ export function footer() {
       <a class="brand brand--light" href="/"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">${esc(site.name)}</span></a>
       <p>Floor coatings for mountain homes, cabins, shops and businesses in Flagstaff and the communities around it.</p>
       <a class="ftr__phone" href="${site.phoneHref}">${esc(site.phone)}</a>
+      <div class="nap">${addressHtml()}<p><a href="mailto:${esc(site.email)}">${esc(site.email)}</a></p><p class="nap__hours">${esc(hoursShort())}</p></div>
     </div>
     <div class="ftr__col">
       <p class="ftr__h">Services</p>

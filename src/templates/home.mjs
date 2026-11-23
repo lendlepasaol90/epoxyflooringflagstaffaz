@@ -1,3 +1,4 @@
+import { addressOneLine, addressHtml, directionsUrl, hoursHtml, hoursShort } from '../lib/nap.mjs';
 import { site } from '../site.mjs';
 import { esc, md, img, beginDedupe, endDedupe } from '../lib/html.mjs';
 import { layout } from './layout.mjs';
@@ -338,7 +339,7 @@ export function renderHome() {
     <div class="rv">
       <h2 id="est-h">Let's look at your floor</h2>
       <p>Tell us about the space and we will set up a free visit. You will come away with a written estimate, an honest assessment of the slab and a recommended window for the work.</p>
-      <ul class="close__facts"><li>Phone <b>${phoneLink()}</b></li><li>Estimates <b>Free and in person</b></li><li>Coverage <b>Flagstaff and nearby</b></li></ul>
+      <ul class="close__facts"><li>Phone <b>${phoneLink()}</b></li><li>Address <b>${esc(addressOneLine())}</b></li><li>Hours <b>${esc(hoursShort())}</b></li><li>Estimates <b>Free and in person</b></li><li>Coverage <b>Flagstaff and nearby</b></li></ul>
     </div>
     <div class="close__card rv d1">${leadForm({ id: 'home-form', heading: 'Request your free estimate', intro: 'A minute to fill in. We will follow up to schedule a visit.', withMessage: true })}</div>
   </div>
@@ -347,8 +348,8 @@ export function renderHome() {
   endDedupe();
   return layout({
     path: '/',
-    title: 'Epoxy Flooring Flagstaff | Garage & Concrete Floor Coatings',
-    description: 'Garage, home and commercial floor coatings in Flagstaff, AZ. We repair winter-damaged concrete and seal it against snowmelt, cinders, deicer and mountain sun.',
+    title: "Flagstaff Epoxy Flooring | Epoxy Flooring Contractor in Flagstaff, AZ",
+    description: "Flagstaff Epoxy Flooring is an epoxy flooring company in Flagstaff, AZ: garage, flake, metallic and commercial floor coatings. Free estimates. Call (928) 395-6976.",
     body,
     image: 'lodgeInterior',
     schema: [{ '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }],

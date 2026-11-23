@@ -1,3 +1,4 @@
+import { addressOneLine, addressHtml, directionsUrl, hoursHtml, hoursShort } from '../lib/nap.mjs';
 import { site } from '../site.mjs';
 import { esc, md, img } from '../lib/html.mjs';
 import { layout, crumbs } from './layout.mjs';
@@ -11,8 +12,10 @@ const side = (id) => `<aside class="side-card">${leadForm({ id, heading: 'Free e
 
 export function renderAbout() {
   const trail = [{ name: 'Home', path: '/' }, { name: 'About us', path: '/about-us/' }];
-  const body = `${head({ title: 'About Epoxy Flooring Flagstaff', lede: 'A Northern Arizona floor coating team that plans every job around the slab, the season and the people who use the space.', image: 'pineTrunks', trail })}
+  const body = `${head({ title: 'About Flagstaff Epoxy Flooring', lede: 'A Northern Arizona floor coating team that plans every job around the slab, the season and the people who use the space.', image: 'pineTrunks', trail })}
 <section class="sec sec--sm"><div class="wrap page-grid"><div class="rv">
+<p>${esc(site.description)}</p>
+<p>${esc(site.name)} is owned by <strong>${esc(site.owner)}</strong>. As an epoxy flooring company in Flagstaff, AZ, we are a local team that answers its own phone and stands behind its own floors.</p>
 ${md(`Floors at altitude live a different life from floors in the desert below. Concrete freezes and thaws dozens of times a winter. Garages fill with meltwater, cinders and deicer. Sunlight is stronger than people expect, and the best weather for coating work comes in short windows between seasons.
 
 We built our approach around those facts. It starts with understanding the slab, because a coating is only as good as the concrete under it, and it ends with a schedule that respects the weather instead of fighting it.`)}
@@ -36,7 +39,7 @@ Honestly, most of it is unglamorous. Grinding the slab properly. Taking the time
 Call or send the form, and we will set up a visit. We will look at the floor, show you samples and explain what we would recommend and why. You get a written estimate afterward, with no pressure to decide on the spot.`)}
 <p style="margin-top:1.5rem"><a class="btn btn--pine" href="/contact-us/">Contact us</a> <a class="btn btn--line" href="/service-areas/">Where we work</a></p>
 </div>${side('about-form')}</div></section>`;
-  return layout({ path: '/about-us/', title: 'About Us | Epoxy Flooring Flagstaff', description: 'Learn how Epoxy Flooring Flagstaff plans floor coatings around the slab, the season and mountain conditions, and what to expect from your free estimate.', body, current: 'about', image: 'pineTrunks', breadcrumbs: trail });
+  return layout({ path: '/about-us/', title: 'About Us | Flagstaff Epoxy Flooring', description: 'Learn how Flagstaff Epoxy Flooring plans floor coatings around the slab, the season and mountain conditions, and what to expect from your free estimate.', body, current: 'about', image: 'pineTrunks', breadcrumbs: trail });
 }
 
 const towns = {
@@ -62,7 +65,7 @@ The communities below are where we work most often. If you are outside them, giv
   <div class="measure rv" style="margin-top:3rem"><h2>Every service, in every area</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${esc(s.name)}</a>: ${esc(s.tagline)}</li>`).join('')}</ul></div>
 </div></section>
 <section class="sec close" id="estimate"><div class="wrap close__grid"><div><h2>Not sure if you are in range?</h2><p>Send your details and we will confirm when we follow up. Or call ${phoneLink()}.</p></div><div class="close__card">${leadForm({ id: 'areas-form', heading: 'Request an estimate', withMessage: true })}</div></div></section>`;
-  return layout({ path: '/service-areas/', title: 'Service Areas | Epoxy Flooring Flagstaff & Northern Arizona', description: 'Floor coatings in Flagstaff, Doney Park, Timberline, Kachina Village, Mountainaire, Munds Park, Bellemont, Williams and Winona.', body, current: 'areas', image: 'meadow', breadcrumbs: trail });
+  return layout({ path: '/service-areas/', title: 'Service Areas | Flagstaff Epoxy Flooring & Northern Arizona', description: 'Floor coatings in Flagstaff, Doney Park, Timberline, Kachina Village, Mountainaire, Munds Park, Bellemont, Williams and Winona.', body, current: 'areas', image: 'meadow', breadcrumbs: trail });
 }
 
 export function renderContact() {
@@ -74,6 +77,8 @@ export function renderContact() {
     <p>A few details help us plan a useful first visit:</p>
     <ul><li>The rough size of the space and whether it is heated</li><li>Any existing coating, paint or sealer</li><li>Visible damage such as flaking, pitting or cracks</li><li>When you would like the work done, or when the space will be empty</li></ul>
     <p><strong>Phone:</strong> ${phoneLink()}${site.email ? `<br><strong>Email:</strong> <a href="mailto:${esc(site.email)}">${esc(site.email)}</a>` : ''}</p>
+    <p><strong>Address:</strong> <a href="${directionsUrl()}" target="_blank" rel="noopener">${esc(addressOneLine())}</a></p>
+    <p><strong>Business hours</strong></p>${hoursHtml()}
     <h3>What happens next</h3>
     <ol><li>We reach out to arrange a time.</li><li>We visit, inspect the slab and bring samples.</li><li>You receive a written estimate with a recommended install window.</li></ol>
   </div>
@@ -104,10 +109,10 @@ To update or delete information you have sent us, get in touch through our [cont
 ## Updates
 
 This policy may change over time. The latest version always lives on this page.`)}</div></section>`;
-  return layout({ path: '/privacy-policy/', title: 'Privacy Policy | Epoxy Flooring Flagstaff', description: 'How Epoxy Flooring Flagstaff collects, uses and protects details submitted through the estimate and contact forms on this website.', body, breadcrumbs: trail });
+  return layout({ path: '/privacy-policy/', title: 'Privacy Policy | Flagstaff Epoxy Flooring', description: 'How Flagstaff Epoxy Flooring collects, uses and protects details submitted through the estimate and contact forms on this website.', body, breadcrumbs: trail });
 }
 
 export function render404() {
   const body = `<section class="lost"><div class="wrap measure center"><h1>Trail ends here</h1><p class="big">That page does not exist or has moved. These will get you back on track.</p><p><a class="btn btn--pine" href="/">Homepage</a> <a class="btn btn--line" href="/garage-floor-coatings/">Garage coatings</a> <a class="btn btn--line" href="/contact-us/">Contact</a></p></div></section>`;
-  return layout({ path: '/404.html', title: 'Page not found | Epoxy Flooring Flagstaff', description: 'The page you were looking for could not be found.', body }).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex">');
+  return layout({ path: '/404.html', title: 'Page not found | Flagstaff Epoxy Flooring', description: 'The page you were looking for could not be found.', body }).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex">');
 }
