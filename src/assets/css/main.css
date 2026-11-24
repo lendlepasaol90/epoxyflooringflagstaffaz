@@ -542,3 +542,8 @@ main *:has(table) { min-width: 0; }
 .hours div { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(127,127,127,.25); padding-bottom: 0.35rem; }
 .hours dt { font-weight: 600; }
 .hours dd { margin: 0; }
+
+/* "You can also find us here" listings block (homepage, above footer) */
+.find-us { text-align: center; }
+.find-us h2 { margin-bottom: 1.25rem; }
+.find-us__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.85rem; }

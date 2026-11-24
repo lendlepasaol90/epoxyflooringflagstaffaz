@@ -343,6 +343,16 @@ export function renderHome() {
     </div>
     <div class="close__card rv d1">${leadForm({ id: 'home-form', heading: 'Request your free estimate', intro: 'A minute to fill in. We will follow up to schedule a visit.', withMessage: true })}</div>
   </div>
+</section>
+
+<section class="sec sec--sm sec--paper find-us" aria-labelledby="find-us-h">
+  <div class="wrap">
+    <h2 id="find-us-h">You can also find us here</h2>
+    <div class="find-us__links">
+      <a class="btn btn--line" href="https://ezlocal.com/az/flagstaff/flooring-contractor/0919944119" target="_blank" rel="noopener">EZlocal</a>
+      <a class="btn btn--line" href="https://issuu.com/flooringflagstaffaz?ps=24" target="_blank" rel="noopener">Issuu</a>
+    </div>
+  </div>
 </section>`;
 
   endDedupe();
